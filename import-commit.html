@@ -1,16 +1,14 @@
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-<script type="text/javascript" src="http://davidlynch.org/projects/maphilight/jquery.maphilight.min.js"></script>
-<script type="text/javascript">
-$(function() {
-	$('.map').maphilight({alwaysOn:true, fill:false});
-});
-</script>
-
-<img class="map" src="import-commit.png" width="1366" height="720" border="0" usemap="#map" />
+<img src="import-commit.png" width="1366" height="720" border="0" usemap="#map" />
 
 <map name="map">
 <area shape="rect" coords="807,523,853,548" href="commit-details.html" />
 </map>
 
-
-
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://davidlynch.org/projects/maphilight/jquery.maphilight.min.js"></script>
+<script type="text/javascript">
+$("img").attr("class", "map");
+$(function() {
+	$('.map').maphilight({alwaysOn:true, fill:false});
+});
+</script>

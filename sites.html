@@ -1,15 +1,16 @@
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-<script type="text/javascript" src="http://davidlynch.org/projects/maphilight/jquery.maphilight.min.js"></script>
-<script type="text/javascript">
-$(function() {
-	$('.map').maphilight({alwaysOn:true, fill:false});
-});
-</script>
-
-<img class="map" src="sites.png" width="968" height="646" border="0" usemap="#map" />
+<img src="sites.png" width="968" height="646" border="0" usemap="#map" />
 
 <map name="map">
 	<area shape="rect" coords="560,13,622,45" href="navigator.html" />
 	<area shape="rect" coords="657,15,704,46" href="plugins.html" />
 	<area shape="rect" coords="707,15,781,43" href="git-repositories.html" />
 </map>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://davidlynch.org/projects/maphilight/jquery.maphilight.min.js"></script>
+<script type="text/javascript">
+$("img").attr("class", "map");
+$(function() {
+	$('.map').maphilight({alwaysOn:true, fill:false});
+});
+</script>

@@ -1,12 +1,4 @@
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-<script type="text/javascript" src="http://davidlynch.org/projects/maphilight/jquery.maphilight.min.js"></script>
-<script type="text/javascript">
-$(function() {
-	$('.map').maphilight({alwaysOn:true, fill:false});
-});
-</script>
-
-<img class="map" src="git-commit.png" width="1097" height="689" border="0" usemap="#map" />
+<img src="git-commit.png" width="1097" height="689" border="0" usemap="#map" />
 
 <map name="map">
 	<area shape="rect" coords="344,206,384,244" href="compare.html" />
@@ -19,3 +11,12 @@ $(function() {
 	<area shape="rect" coords="769,20,833,40" href="git-repositories.html" />
 	<area shape="rect" coords="5,7,126,81" href="index.html" />
 </map>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://davidlynch.org/projects/maphilight/jquery.maphilight.min.js"></script>
+<script type="text/javascript">
+$("img").attr("class", "map");
+$(function() {
+	$('.map').maphilight({alwaysOn:true, fill:false});
+});
+</script>

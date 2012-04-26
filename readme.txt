@@ -14,6 +14,5 @@ navigator...
 -  then click on Git Log to see a log mockup
 -  click on the annotated commit link to see the commit page.
 
-In order to highlight areas in your map:
-- copy-paste 3 scripts from any other .html file
-- add 'class="map"' attribute to your image ('img')  
+When creating a new mockup copy 3 scripts from any existing html file 
+and paste them at the bottom of your html.

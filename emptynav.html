@@ -1,14 +1,15 @@
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-<script type="text/javascript" src="http://davidlynch.org/projects/maphilight/jquery.maphilight.min.js"></script>
-<script type="text/javascript">
-$(function() {
-	$('.map').maphilight({alwaysOn:true, fill:false});
-});
-</script>
-
-<img class="map" src="navnolocation.png" usemap="#map" border="0"/>
+<img src="navnolocation.png" usemap="#map" border="0"/>
 
 <map name="map">
   	<area shape="rect" coords="328,356,497,403" href="index.html" alt="Home page" />
   	<area shape="rect" coords="0,336,177,361" href="navigator.html" alt="Navigator page" />
 </map>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://davidlynch.org/projects/maphilight/jquery.maphilight.min.js"></script>
+<script type="text/javascript">
+$("img").attr("class", "map");
+$(function() {
+	$('.map').maphilight({alwaysOn:true, fill:false});
+});
+</script>

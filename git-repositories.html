@@ -1,19 +1,11 @@
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-<script type="text/javascript" src="http://davidlynch.org/projects/maphilight/jquery.maphilight.min.js"></script>
-<script type="text/javascript">
-$(function() {
-	$('.map').maphilight({alwaysOn:true, fill:false});
-});
-</script>
-
-<img class="map" src="git-repositories.png" width="893" height="402" border="0" usemap="#map" />
+<img src="git-repositories.png" width="893" height="402" border="0" usemap="#map" />
 
 <map name="map">
 <!-- #$-:Image map file created by GIMP Image Map plug-in -->
 <!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
 <!-- #$-:Please do not edit lines starting with "#$" -->
 <!-- #$VERSION:2.3 -->
-<!-- #$AUTHOR:tzarna   -->
+<!-- #$AUTHOR:tzarna    -->
 <area shape="rect" coords="50,0,114,32" href="navigator.html" />
 <area shape="rect" coords="241,0,324,29" href="plugins.html" />
 <area shape="rect" coords="710,183,768,208" href="git-status.html" />
@@ -24,4 +16,14 @@ $(function() {
 <area shape="rect" coords="121,3,151,27" href="sites.html" />
 <area shape="rect" coords="3,84,103,115" href="git-repositories-clone.html" />
 <area shape="rect" coords="566,283,709,310" href="navigator.html" />
+<area shape="rect" coords="865,81,891,107" href="git-repositories-progress.html" />
 </map>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://davidlynch.org/projects/maphilight/jquery.maphilight.min.js"></script>
+<script type="text/javascript">
+$("img").attr("class", "map");
+$(function() {
+	$('.map').maphilight({alwaysOn:true, fill:false});
+});
+</script>

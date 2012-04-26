@@ -1,14 +1,6 @@
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-<script type="text/javascript" src="http://davidlynch.org/projects/maphilight/jquery.maphilight.min.js"></script>
-<script type="text/javascript">
-$(function() {
-	$('.map').maphilight({alwaysOn:true, fill:false});
-});
-</script>
-
 <a href="git-status.html">current Git Status page</a><br/>
 
-<img class="map" src="git-status-susan.png" width="990" height="1236" border="0" usemap="#map" />
+<img src="git-status-susan.png" width="990" height="1236" border="0" usemap="#map" />
 
 <map name="map">
 <!-- #$-:Image map file created by GIMP Image Map plug-in -->
@@ -24,3 +16,12 @@ $(function() {
 <area shape="rect" coords="559,306,702,334" href="editor.html" />
 <area shape="rect" coords="845,889,932,923" href="git-log.html" />
 </map>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://davidlynch.org/projects/maphilight/jquery.maphilight.min.js"></script>
+<script type="text/javascript">
+$("img").attr("class", "map");
+$(function() {
+	$('.map').maphilight({alwaysOn:true, fill:false});
+});
+</script>

@@ -1,12 +1,4 @@
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-<script type="text/javascript" src="http://davidlynch.org/projects/maphilight/jquery.maphilight.min.js"></script>
-<script type="text/javascript">
-$(function() {
-	$('.map').maphilight({alwaysOn:true, fill:false});
-});
-</script>
-
-<img class="map" src="index.png" width="1094" height="704" border="0" usemap="#map" />
+<img src="index.png" width="1094" height="704" border="0" usemap="#map" />
 
 <map name="map">
 	<area shape="rect" coords="723,16,789,43" alt="Navigator" href="emptynav.html" />
@@ -17,3 +9,12 @@ $(function() {
 	<area shape="rect" coords="419,361,631,391" href="http://wiki.eclipse.org/Orion/How_Tos/Cloning_repository_from_github" />
 	<area shape="rect" coords="425,278,539,308" href="http://github.com" />
 </map>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://davidlynch.org/projects/maphilight/jquery.maphilight.min.js"></script>
+<script type="text/javascript">
+$("img").attr("class", "map");
+$(function() {
+	$('.map').maphilight({alwaysOn:true, fill:false});
+});
+</script>
