@@ -1,6 +1,14 @@
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://davidlynch.org/projects/maphilight/jquery.maphilight.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	$('.map').maphilight({alwaysOn:true, fill:false});
+});
+</script>
+
 <a href="git-status.html">current Git Status page</a><br/>
 
-<img src="git-status-boris.png" width="900" height="570" border="0" usemap="#map" />
+<img class="map" src="git-status-boris.png" width="900" height="570" border="0" usemap="#map" />
 
 <map name="map">
 	<area shape="rect" coords="242,490,383,513" href="git-clone.html" />

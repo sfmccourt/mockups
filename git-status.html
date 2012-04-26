@@ -1,7 +1,15 @@
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://davidlynch.org/projects/maphilight/jquery.maphilight.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	$('.map').maphilight({alwaysOn:true, fill:false});
+});
+</script>
+
 <a href="git-status-susan.html">Susan's mockup</a> from <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=349328">bug 349328</a>&nbsp;|
 <a href="git-status-boris.html">Boris' mockup</a> from <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=336116#c14">bug 336116</a>
 
-<img src="git-status.png" width="1423" height="755" border="0" usemap="#map" />
+<img class="map" src="git-status.png" width="1423" height="755" border="0" usemap="#map" />
 
 <map name="map">
 <!-- #$-:Image map file created by GIMP Image Map plug-in -->

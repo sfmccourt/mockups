@@ -1,4 +1,12 @@
-<img src="plugins.png" width="968" height="646" border="0" usemap="#map" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://davidlynch.org/projects/maphilight/jquery.maphilight.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	$('.map').maphilight({alwaysOn:true, fill:false});
+});
+</script>
+
+<img class="map" src="plugins.png" width="968" height="646" border="0" usemap="#map" />
 
 <map name="map">
 	<area shape="rect" coords="558,15,625,41" href="navigator.html" />

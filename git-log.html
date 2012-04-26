@@ -1,4 +1,12 @@
-<img src="git-log.png" usemap="#map" border="0"/>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://davidlynch.org/projects/maphilight/jquery.maphilight.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	$('.map').maphilight({alwaysOn:true, fill:false});
+});
+</script>
+
+<img class="map" src="git-log.png" usemap="#map" border="0"/>
 
 <map name="map">
   	<area shape="rect" coords="60,463,363,496" href="git-commit.html" />

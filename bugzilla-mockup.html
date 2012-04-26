@@ -1,4 +1,12 @@
-<img src="bugzilla-mockup.png" width="1362" height="713" border="0" usemap="#map" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://davidlynch.org/projects/maphilight/jquery.maphilight.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	$('.map').maphilight({alwaysOn:true, fill:false});
+});
+</script>
+
+<img class="map" src="bugzilla-mockup.png" width="1362" height="713" border="0" usemap="#map" />
 
 <map name="map">
 <area shape="rect" coords="247,637,320,664" href="import-commit.html" />
